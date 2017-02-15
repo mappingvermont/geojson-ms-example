@@ -1,8 +1,8 @@
 const Router = require('koa-router');
 
 
-const router = new Router({
-    prefix: '/node-skeleton',
+const hiRouter = new Router({
+    prefix: '/geojson-ms-example',
 });
 
 class HiRouter {
@@ -15,7 +15,7 @@ class HiRouter {
 
 }
 
-router.get('/hi', HiRouter.hi);
+hiRouter.get('/hi', HiRouter.hi);
 
 
-module.exports = router;
+module.exports = hiRouter;

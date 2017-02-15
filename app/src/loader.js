@@ -14,12 +14,14 @@ module.exports = (function () {
             const newPath = path ? (`${path}/${file}`) : file;
             const stat = fs.statSync(newPath);
             if (!stat.isDirectory()) {
-                if (file.lastIndexOf('.router.js') !== -1) {
+                console.log(file)
+                if ((file.lastIndexOf('.router.js') !== -1) && (file.lastIndexOf('swp') === -1)) {
                     if (file === 'index.router.js') {
                         existIndexRouter = true;
                     } else {
                         logger.debug('Loading route %s, in path %s', newPath, pathApi);
                         if (pathApi) {
+                            console.log(newPath)
                             app.use(mount(pathApi, require(newPath).middleware()));
                         } else {
                             app.use(require(newPath).middleware());

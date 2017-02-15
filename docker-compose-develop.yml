@@ -5,9 +5,9 @@ develop:
   ports:
     - "35739:35729"
   environment:
-    CT_URL: http://mymachine:9000 
-    LOCAL_URL: http://mymachine:3005
+    CT_URL: http://172.30.2.63:9000 
+    LOCAL_URL: http://172.30.2.63:3005
     CT_TOKEN: null
   command: develop
   volumes:
-    - ./app:/opt/node-skeleton/app
+    - ./app:/opt/geojson-ms-example/app
