@@ -2,18 +2,18 @@
 	"name": "#(service.name)",
 	"tags": ["gfw", "rw"],
 	"endpoints": [{
-		"path": "/geojson-ms-example/hi",
-		"method": "GET",
-		"redirect": {
-			"method": "GET",
-			"path": "/api/v1/geojson-ms-example/hi"
-		}
-	},{
-                "path": "/geojson-ms-example/convert",
+                "path": "/geojson-ms-example/to-esri",
                 "method": "GET",
                 "redirect": {
                         "method": "GET",
-                        "path": "/api/v1/geojson-ms-example/convert"
+                        "path": "/api/v1/geojson-ms-example/to-esri"
+                }
+	},{
+                "path": "/geojson-ms-example/to-geojson",
+                "method": "GET",
+                "redirect": {
+                        "method": "GET",
+                        "path": "/api/v1/geojson-ms-example/to-geojson"
                 }
         }]
 }
