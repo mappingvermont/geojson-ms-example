@@ -3,16 +3,16 @@
 	"tags": ["gfw", "rw"],
 	"endpoints": [{
                 "path": "/geojson-ms-example/to-esri",
-                "method": "GET",
+                "method": "POST",
                 "redirect": {
-                        "method": "GET",
+                        "method": "POST",
                         "path": "/api/v1/geojson-ms-example/to-esri"
                 }
 	},{
                 "path": "/geojson-ms-example/to-geojson",
-                "method": "GET",
+                "method": "POST",
                 "redirect": {
-                        "method": "GET",
+                        "method": "POST",
                         "path": "/api/v1/geojson-ms-example/to-geojson"
                 }
         }]
